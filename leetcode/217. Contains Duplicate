@@ -5,13 +5,12 @@
 // Language: C
 // Approach: Brute-force using nested loops (O(n^2))
 
-#include <stdbool.h>
+int cmp(const void *a,const void *b){return *(int*)a-*(int*)b;}
 
 bool containsDuplicate(int* nums, int numsSize) {
-    for (int i = 0; i < numsSize; i++) {
-        for (int j = i + 1; j < numsSize; j++) {
-            if (nums[i] == nums[j]) return true;
-        }
+   qsort(nums,numsSize,sizeof(int),cmp);
+    for(int i=1;i<numsSize;i++){
+            if(nums[i-1]==nums[i]) return true;    
     }
     return false;
 }
