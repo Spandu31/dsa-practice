@@ -15,7 +15,7 @@ This repository is where I keep track of the Data Structures and Algorithms prob
 
 | Problem # | Title | Solution File | Status |
 |-----------|-------------------------|-------------------------------|--------|
-| 217       | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [217-contains-duplicate.c](./leetcode/217-contains-duplicate.c) | Solved |
+| 217       | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [217-contains-duplicate.c](leetcode) | Solved |
 
 ---
 
